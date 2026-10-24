@@ -4,7 +4,7 @@ Fichier à importer : `publication-cdm.json`.
 
 ## Ce que fait le workflow
 
-Chaque vendredi à 12h00 (heure de Paris), le workflow lit le calendrier
+Chaque jour à 17h30 (heure de Paris), le workflow lit le calendrier
 `calendrier/calendrier.json` du dépôt `tomhodet/cdm-insta`, cherche le post du jour
 et le publie sur le compte Instagram de CDM Conciergerie (image simple ou carrousel).
 Il vérifie d'abord que la légende ne figure pas déjà parmi les 10 derniers posts
@@ -49,7 +49,7 @@ Statut container, Publier, Creer element, Creer carrousel, Premier commentaire).
 ## Schéma
 
 ```
-Chaque vendredi 12h ─┐
+Chaque jour 17h30 ─┐
 Lancement manuel ────┴─> Config -> Lire calendrier -> Post du jour -> Post prevu ?
   -> Derniers posts -> Deja publie ? -> A publier ? -> Carrousel ?
        non : Creer container ──────────────────────────────────────────┐

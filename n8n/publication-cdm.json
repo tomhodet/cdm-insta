@@ -8,13 +8,12 @@
           "interval": [
             {
               "field": "cronExpression",
-              "expression": "0 0 12 * * 5"
+              "expression": "0 30 17 * * *"
             }
           ]
-        },
-        "url": ""
+        }
       },
-      "name": "Chaque vendredi 12h",
+      "name": "Chaque jour 17h30",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
@@ -769,7 +768,7 @@
         ]
       ]
     },
-    "Chaque vendredi 12h": {
+    "Chaque jour 17h30": {
       "main": [
         [
           {
