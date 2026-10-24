@@ -20,11 +20,10 @@ Format d'une entrée du calendrier :
 
 ## Réglages (nœud `Config`)
 
-Route retenue : Facebook Login, avec un token de Page longue durée. Il n'y a pas de
-workflow de renouvellement du token pour ce compte.
+Route retenue : connexion Instagram (comme le compte DelorIA). Le jeton dure 60 jours ;
+`renouvellement-token-cdm.json` le renouvelle le 1er de chaque mois à 4h15.
 
-- **API_BASE** : `https://graph.facebook.com` par défaut. Mettre
-  `https://graph.instagram.com` si on repasse par la connexion Instagram.
+- **API_BASE** : `https://graph.instagram.com`.
 - **IG_ID** : `17841476967149235` (compte Instagram professionnel de CDM).
 - **ALT_TEXT** : `true`. Le texte alternatif (coupé à 1000 caractères) est envoyé sur
   l'image simple et sur chaque élément du carrousel.
@@ -33,14 +32,15 @@ workflow de renouvellement du token pour ce compte.
 
 ## À faire après l'import
 
-**Credential** : créer une credential « Header Auth » nommée `Instagram CDM`
-(Name : `Authorization`, Value : `Bearer <token de Page CDM>`), puis la sélectionner
-dans chaque nœud HTTP qui l'affiche en rouge (Derniers posts, Creer container,
-Statut container, Publier, Creer element, Creer carrousel, Premier commentaire).
+**Credentials** (déjà créées le 24/10/2026) : `Instagram CDM` (Header Auth,
+`Authorization: Bearer <jeton>`) et `Instagram CDM refresh` (Query Auth, `access_token`).
+Si un nœud HTTP les affiche en rouge après l'import, les resélectionner.
+Dans `renouvellement-token-cdm.json`, choisir la connexion à l'API n8n dans les deux
+nœuds « Mettre a jour credential ».
 
 ## Tester sans publier
 
-1. Dans `Post du jour`, mettre une date du calendrier : `const DATE_FORCEE = '2026-11-06';`
+1. Dans `Post du jour`, mettre une date du calendrier : `const DATE_FORCEE = '2026-11-03';`
 2. Désactiver le nœud `Publier` (clic droit, Deactivate).
 3. Lancer avec `Lancement manuel` et vérifier les sorties : post trouvé, containers
    créés, statut `FINISHED`. Le container non publié expire seul au bout de 24 h.
