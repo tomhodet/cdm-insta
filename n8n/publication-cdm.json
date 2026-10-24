@@ -1,0 +1,832 @@
+{
+  "name": "CDM · Publication Instagram",
+  "nodes": [
+    {
+      "id": "e80c1a27-62ab-4130-9e37-0d3268c2a346",
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 0 12 * * 5"
+            }
+          ]
+        },
+        "url": ""
+      },
+      "name": "Chaque vendredi 12h",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "1f376270-e776-40f1-9e27-4aadffabb528",
+      "parameters": {
+        "url": ""
+      },
+      "name": "Lancement manuel",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        200
+      ]
+    },
+    {
+      "id": "16fe2df6-6079-420c-864e-edd0c7e87a30",
+      "parameters": {
+        "jsCode": "// Parametres du compte CDM Conciergerie. Seul endroit a modifier.\nreturn [{ json: {\n  // Connexion Instagram, comme le compte DelorIA (token de 60 jours renouvele chaque mois).\n  API_BASE: 'https://graph.instagram.com',\n  // Identifiant du compte Instagram professionnel de CDM.\n  IG_ID: '17841476967149235',\n  CALENDRIER_URL: 'https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/calendrier.json',\n  // Texte alternatif (1000 caracteres max) sur l'image seule et chaque element de carrousel.\n  ALT_TEXT: true,\n  // Lieu Facebook. Si non vide, envoye en location_id sur le conteneur image simple ou CAROUSEL.\n  LOCATION_ID: ''\n} }];",
+        "url": ""
+      },
+      "name": "Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        100
+      ]
+    },
+    {
+      "id": "97432175-70b3-4354-8690-7c7368fda06f",
+      "parameters": {
+        "url": "={{ $('Config').first().json.CALENDRIER_URL }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "name": "Lire calendrier",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        480,
+        100
+      ]
+    },
+    {
+      "id": "5a2cbcab-29a6-41bd-9bac-d5d058c26df9",
+      "parameters": {
+        "jsCode": "// Pour un test, mettre une date du calendrier, par exemple '2026-11-06'. Laisser vide en production.\nconst DATE_FORCEE = '';\n\nconst aujourdhui = DATE_FORCEE || $now.setZone('Europe/Paris').toISODate();\nconst posts = $input.all().map(i => i.json);\nconst post = posts.find(p => p.date === aujourdhui);\n\nif (!post) {\n  return [{ json: { trouve: false, date: aujourdhui } }];\n}\nreturn [{ json: { trouve: true, date: post.date, image_url: post.image_url,\n  images: post.images || [], carrousel: post.type === 'carrousel', legende: post.legende,\n  premier_commentaire: post.premier_commentaire || '', alt_text: post.alt_text || '' } }];",
+        "url": ""
+      },
+      "name": "Post du jour",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        100
+      ]
+    },
+    {
+      "id": "5809f861-0d50-4a74-89d6-2cdab04af0cd",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.trouve }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {},
+        "url": ""
+      },
+      "name": "Post prevu ?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        960,
+        100
+      ]
+    },
+    {
+      "id": "1cf5c043-b25d-40de-a34b-f5bf1b4b7123",
+      "parameters": {
+        "url": "={{ $('Config').first().json.API_BASE }}/{{ $('Config').first().json.IG_ID }}/media",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "caption,timestamp"
+            },
+            {
+              "name": "limit",
+              "value": "10"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Derniers posts",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1200,
+        0
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "b5nzUblWQmdAb4Ec",
+          "name": "Instagram CDM"
+        }
+      }
+    },
+    {
+      "id": "409b2598-d850-4c45-a6c6-bda5a6e7ad0d",
+      "parameters": {
+        "jsCode": "// Protection contre la double publication : si une exécution est relancée,\n// on ne republie pas un post dont la légende figure déjà parmi les derniers posts.\nconst post = $('Post du jour').first().json;\nconst debut = s => (s || '').replace(/\\s+/g, ' ').trim().slice(0, 80);\nconst recents = ($input.first().json.data || []).map(m => debut(m.caption));\nconst deja = recents.includes(debut(post.legende));\nreturn [{ json: { ...post, deja_publie: deja } }];",
+        "url": ""
+      },
+      "name": "Deja publie ?",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1440,
+        0
+      ]
+    },
+    {
+      "id": "a3f22de6-6717-495c-82b5-128fe092d3ac",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c2",
+              "leftValue": "={{ $json.deja_publie }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {},
+        "url": ""
+      },
+      "name": "A publier ?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1680,
+        0
+      ]
+    },
+    {
+      "id": "2dd8927c-4941-4f14-893e-393f8e44f37c",
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.API_BASE }}/{{ $('Config').first().json.IG_ID }}/media",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "options": {},
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify(Object.assign({ image_url: $json.image_url, caption: $json.legende }, ($('Config').first().json.ALT_TEXT && $json.alt_text) ? { alt_text: String($json.alt_text).slice(0, 1000) } : {}, $('Config').first().json.LOCATION_ID ? { location_id: $('Config').first().json.LOCATION_ID } : {})) }}"
+      },
+      "name": "Creer container",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1920,
+        -100
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "b5nzUblWQmdAb4Ec",
+          "name": "Instagram CDM"
+        }
+      }
+    },
+    {
+      "id": "776369b6-8bd4-4056-8eaf-698aaa8343a4",
+      "parameters": {
+        "amount": 60,
+        "unit": "seconds",
+        "url": ""
+      },
+      "name": "Attendre 60s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2160,
+        -100
+      ],
+      "webhookId": "bbe9904a-f3a5-45c1-a3f2-d8145d84c39c"
+    },
+    {
+      "id": "4a2789c7-ada5-48ff-a67f-d2970f32f5c0",
+      "parameters": {
+        "url": "={{ $('Config').first().json.API_BASE }}/{{ $json.id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "status_code"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Statut container",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2400,
+        -100
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "b5nzUblWQmdAb4Ec",
+          "name": "Instagram CDM"
+        }
+      }
+    },
+    {
+      "id": "d74f25f6-8d4e-4d33-9572-bfc1cd5f7e29",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c3",
+              "leftValue": "={{ $json.status_code }}",
+              "rightValue": "FINISHED",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {},
+        "url": ""
+      },
+      "name": "Container pret ?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        2640,
+        -100
+      ]
+    },
+    {
+      "id": "7391d9eb-7ed9-4f6c-9c1d-582f0ca8914c",
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.API_BASE }}/{{ $('Config').first().json.IG_ID }}/media_publish",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "creation_id",
+              "value": "={{ $json.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Publier",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2880,
+        -200
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "b5nzUblWQmdAb4Ec",
+          "name": "Instagram CDM"
+        }
+      }
+    },
+    {
+      "id": "7683dd94-fc00-41e3-8440-da1711b7ec06",
+      "parameters": {
+        "errorMessage": "=Publication Instagram du {{ $('Post du jour').item.json.date }} bloquée : le container n'est pas prêt (statut {{ $json.status_code }}).",
+        "url": ""
+      },
+      "name": "Erreur container",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        2880,
+        0
+      ]
+    },
+    {
+      "id": "a9879bd2-691c-4914-aa32-79bbfb7f20bd",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c4",
+              "leftValue": "={{ $json.carrousel }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {},
+        "url": ""
+      },
+      "name": "Carrousel ?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1700,
+        -100
+      ]
+    },
+    {
+      "id": "33a11d61-7c63-407c-ba2e-a50fe25a62e3",
+      "parameters": {
+        "jsCode": "// Une entree par image du carrousel, dans l'ordre. Chaque element reprend le texte alternatif du post.\nconst post = $input.first().json;\nreturn post.images.map(url => ({ json: { image_url: url, alt_text: post.alt_text || '' } }));",
+        "url": ""
+      },
+      "name": "Eclater images",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1920,
+        100
+      ]
+    },
+    {
+      "id": "a462eccf-f4d0-43d9-9a81-69cafaf3e150",
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.API_BASE }}/{{ $('Config').first().json.IG_ID }}/media",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "options": {},
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify(Object.assign({ image_url: $json.image_url, is_carousel_item: true }, ($('Config').first().json.ALT_TEXT && $json.alt_text) ? { alt_text: String($json.alt_text).slice(0, 1000) } : {})) }}"
+      },
+      "name": "Creer element",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2140,
+        100
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "b5nzUblWQmdAb4Ec",
+          "name": "Instagram CDM"
+        }
+      }
+    },
+    {
+      "id": "26334d6d-7aae-482c-9b25-a13c86753013",
+      "parameters": {
+        "jsCode": "// Rassemble les identifiants des images, dans l'ordre de publication.\nconst ids = $input.all().map(i => i.json.id);\nreturn [{ json: { children: ids.join(',') } }];",
+        "url": ""
+      },
+      "name": "Assembler carrousel",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2360,
+        100
+      ]
+    },
+    {
+      "id": "5a80eb79-ee58-43c6-8bff-fd7069877d8b",
+      "parameters": {
+        "amount": 30,
+        "unit": "seconds",
+        "url": ""
+      },
+      "name": "Attendre 30s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2580,
+        100
+      ],
+      "webhookId": "ca094e28-6e9e-42ea-959c-85a859eaca57"
+    },
+    {
+      "id": "b376de3c-574b-411b-900c-e92126ce75f1",
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.API_BASE }}/{{ $('Config').first().json.IG_ID }}/media",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "options": {},
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify(Object.assign({ media_type: 'CAROUSEL', children: $json.children, caption: $('Post du jour').first().json.legende }, $('Config').first().json.LOCATION_ID ? { location_id: $('Config').first().json.LOCATION_ID } : {})) }}"
+      },
+      "name": "Creer carrousel",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2800,
+        100
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "b5nzUblWQmdAb4Ec",
+          "name": "Instagram CDM"
+        }
+      }
+    },
+    {
+      "id": "50e9ce99-8165-4521-b051-7348742d1427",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c5",
+              "leftValue": "={{ ($('Post du jour').first().json.premier_commentaire || '').trim() }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {},
+        "url": ""
+      },
+      "name": "Commentaire ?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        3120,
+        -200
+      ]
+    },
+    {
+      "id": "74f7ac38-cd75-4596-bb25-74a11a3acee3",
+      "parameters": {
+        "amount": 10,
+        "unit": "seconds",
+        "url": ""
+      },
+      "name": "Attendre 10s",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        3360,
+        -300
+      ],
+      "webhookId": "2ba5eccd-1d91-44d0-8108-78dcd1f35e05"
+    },
+    {
+      "id": "6235bf05-554a-4881-8168-31eb7a70b6e9",
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.API_BASE }}/{{ $('Publier').first().json.id }}/comments",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $('Post du jour').first().json.premier_commentaire }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Premier commentaire",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3600,
+        -300
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "b5nzUblWQmdAb4Ec",
+          "name": "Instagram CDM"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Lancement manuel": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lire calendrier": {
+      "main": [
+        [
+          {
+            "node": "Post du jour",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post du jour": {
+      "main": [
+        [
+          {
+            "node": "Post prevu ?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post prevu ?": {
+      "main": [
+        [
+          {
+            "node": "Derniers posts",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Derniers posts": {
+      "main": [
+        [
+          {
+            "node": "Deja publie ?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deja publie ?": {
+      "main": [
+        [
+          {
+            "node": "A publier ?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "A publier ?": {
+      "main": [
+        [
+          {
+            "node": "Carrousel ?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Creer container": {
+      "main": [
+        [
+          {
+            "node": "Attendre 60s",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attendre 60s": {
+      "main": [
+        [
+          {
+            "node": "Statut container",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Statut container": {
+      "main": [
+        [
+          {
+            "node": "Container pret ?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Container pret ?": {
+      "main": [
+        [
+          {
+            "node": "Publier",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Erreur container",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Carrousel ?": {
+      "main": [
+        [
+          {
+            "node": "Eclater images",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Creer container",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Eclater images": {
+      "main": [
+        [
+          {
+            "node": "Creer element",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Creer element": {
+      "main": [
+        [
+          {
+            "node": "Assembler carrousel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Assembler carrousel": {
+      "main": [
+        [
+          {
+            "node": "Attendre 30s",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attendre 30s": {
+      "main": [
+        [
+          {
+            "node": "Creer carrousel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Creer carrousel": {
+      "main": [
+        [
+          {
+            "node": "Attendre 60s",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chaque vendredi 12h": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "Lire calendrier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Publier": {
+      "main": [
+        [
+          {
+            "node": "Commentaire ?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Commentaire ?": {
+      "main": [
+        [
+          {
+            "node": "Attendre 10s",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Attendre 10s": {
+      "main": [
+        [
+          {
+            "node": "Premier commentaire",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "timezone": "Europe/Paris"
+  }
+}
