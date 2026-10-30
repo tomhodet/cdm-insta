@@ -1,1 +1,405 @@
-[]
+[
+  {
+    "date": "2026-11-03",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/03.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/03-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/03-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/03-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/03-05.jpg"
+    ],
+    "legende": "Une conciergerie, ce n'est pas seulement une boîte de messages.\n\nÊtre à Pontorson, au centre de la baie, change beaucoup de choses : je connais les logements, les chemins, les jours de grand vent. Je peux conseiller un voyageur comme le ferait un voisin, et répondre aux imprévus à toute heure. C'est compris dans ma formule.\n\nEt une annonce écrite par quelqu'un d'ici donne envie de venir : c'est ainsi que je rédige celle de chaque logement de Clés des Merveilles.\n\nVous avez un logement dans la baie ? Parlons-en en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #conciergerie #proprietaire #baiedumontsaintmichel",
+    "alt_text": "Carrousel de cinq images, logo CDM Conciergerie en haut de chaque image. Première image : un clocher de village dans la brume rose du matin ; libellé « Propriétaires » ; titre « Pourquoi une conciergerie d'ici ? » et mention « Faites défiler ». Deuxième image : une vitre ruisselante de pluie, un arbre flou derrière ; carte « Ça change quoi ? » : Je connais Pontorson et la baie. Troisième image : des clés anciennes accrochées à une serrure, sur une porte claire ; carte « Et quand il y a un imprévu ? » : Être d'ici, c'est connaître le logement et le coin, et répondre aux imprévus à toute heure. Quatrième image : le Mont-Saint-Michel au-dessus des champs verts, sous un ciel nuageux ; carte « Et pour mon annonce ? » : Une annonce qui parle vraiment du coin, des herbus jusqu'au Mont, rassure le voyageur qui ne connaît pas Pontorson. Cinquième image : un pommier chargé de pommes rouges ; titre « Être d'ici, ça se sent » et mention « Écrivez-moi en message privé ».",
+    "id": "p001",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Pourquoi une conciergerie d'ici ?"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/06.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/06.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/06-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/06-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/06-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/06-05.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/06-06.jpg"
+    ],
+    "legende": "Novembre est un beau mois pour marcher dans la baie : moins de monde, une lumière basse, et des chemins pour tous les niveaux.\n\nJe vous en propose trois, du plus facile au plus sportif : la voie verte depuis Pontorson, le sentier des douaniers de Cancale à la pointe du Grouin, et la digue de Cherrueix pour les bons marcheurs.\n\nPour les voyageurs de Clés des Merveilles logés à Pontorson, la première commence en ville.\n\nPour la grève, une seule règle : on y va avec un guide agréé.\n\nEnvie de marcher dans la baie cet automne ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #baiedumontsaintmichel #randonnee #voieverte",
+    "alt_text": "Carrousel de six images, logo CDM Conciergerie en haut de chaque image. Première image : un sentier de sable entre les oyats ; titre « Trois balades autour de la baie » et mention « Faites défiler ». Deuxième image : le Mont-Saint-Michel sous de grands nuages blancs ; carte « La voie verte » : De Pontorson au Mont, le chemin longe le Couesnon, tout à plat. Troisième image : la mer et les rochers de la pointe du Grouin ; carte « De Cancale au Grouin » : Le sentier des douaniers mène de Cancale à la pointe du Grouin, entre ajoncs et pins. Quatrième image : la grève de Saint-Benoît-des-Ondes, le Mont au loin ; carte « La digue côté Bretagne » : Depuis Cherrueix, côté Bretagne, une longue digue file vers le Mont. Cinquième image : la grève et des touffes d'herbus vues du ciel ; carte « Et marcher dans la baie ? » : Jamais seul. Sixième image : des traces de pas dans le sable ridé ; titre « La baie se mérite, pas à pas » et mention « Écrivez-moi en message privé ».",
+    "id": "p002",
+    "serie": "baie",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Trois balades autour de la baie"
+  },
+  {
+    "date": "2026-11-10",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/10.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/10.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/10-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/10-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/10-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/10-05.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/10-06.jpg"
+    ],
+    "legende": "Décembre arrive vite, et les voyageurs des fêtes réservent tôt.\n\nPour un propriétaire, c'est le moment de vérifier trois choses : que le calendrier est bien ouvert sur les vacances de Noël, que vos propres dates sont bloquées si vous venez en famille, et que le logement est prêt à recevoir un groupe.\n\nLa décoration des fêtes peut aussi se prévoir, sur demande : elle fait partie de la formule de Clés des Merveilles.\n\nVotre logement est-il prêt pour les fêtes ? Dites-le-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #locationsaisonniere #noel",
+    "alt_text": "Carrousel de six images, logo CDM Conciergerie en haut de chaque image. Première image : une table aux artichauts et bougies blanches ; titre « Les fêtes se préparent tôt » et mention « Faites défiler ». Deuxième image : un voilage traversé par la lumière ; carte « Les vacances de Noël » : du samedi 19 décembre au lundi 4 janvier, pour toutes les zones. Troisième image : une table aux bougies et fleurs d'automne ; carte « Les grandes maisons » : familles et amis se retrouvent pour les fêtes. Quatrième image : un bouquet de roses ; carte « La décoration » : elle peut se prévoir, sur demande. Cinquième image : une fenêtre aux volets gris-vert dans le lierre ; carte « Venir pour les fêtes ? » : bloquez vos dates dès maintenant. Sixième image : des lanternes devant une fenêtre de pierre ; titre « Des fêtes bien préparées » et mention « Écrivez-moi en message privé ».",
+    "id": "p003",
+    "serie": "saison",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Les fêtes se préparent tôt"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/13.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/13.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/13-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/13-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/13-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/13-05.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/13-06.jpg"
+    ],
+    "legende": "En novembre, les oiseaux migrateurs font halte dans la baie, et certains y passent l'hiver.\n\nC'est une zone humide d'importance internationale, classée site Ramsar. Bernaches, huîtriers-pies, barges, bécasseaux : avec des jumelles et un peu de patience, on les observe depuis les herbus, sans s'approcher.\n\nRestez sur les chemins et gardez vos distances : la baie est leur garde-manger.\n\nDepuis Pontorson, où Clés des Merveilles a plusieurs logements, les herbus sont tout proches.\n\nVous préparez un séjour cet hiver ? Écrivez-moi en message privé, je vous dirai par où commencer.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #baiedumontsaintmichel #oiseaux #naturenormandie",
+    "alt_text": "Carrousel de six images, logo CDM Conciergerie en haut de chaque image. Première image : un îlot à l'horizon de la baie au coucher du soleil ; titre « Les oiseaux de la baie » et mention « Faites défiler ». Deuxième image : un goéland qui crie, en gros plan sur un ciel bleu ; carte « Pourquoi autant d'oiseaux ici ? » : La baie est classée site Ramsar. Troisième image : un ciel rose au-dessus des eaux de la baie ; carte « Lesquels voit-on ? » : Des bernaches cravants, des huîtriers-pies, des barges, des bécasseaux. Quatrième image : un ciel d'orage doré au-dessus des herbus et d'une flaque ; carte « Et l'îlot de Tombelaine ? » : C'est une réserve pour les oiseaux. Cinquième image : le Mont-Saint-Michel dans la brume, au-dessus de la baie ; texte « Des jumelles, et les herbus tôt le matin. ». Sixième image : le soleil couchant sur la grève à marée basse ; titre « La baie, côté nature » et mention « Écrivez-moi en message privé ».",
+    "id": "p004",
+    "serie": "baie",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Les oiseaux de la baie"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/17.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/17.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/17-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/17-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/17-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/17-05.jpg"
+    ],
+    "legende": "Une seule formule, la même pour tous les logements de Clés des Merveilles. Voici ce qu'elle comprend.\n\nCôté voyageurs : les annonces sur Airbnb, Booking et Abritel, et les échanges dans leur langue, avant, pendant et après le séjour. Côté logement : l'accueil et la remise des clés, le ménage contrôlé, les consommables, un contrôle après chaque départ, et les imprévus à toute heure.\n\nLe linge se prévoit sur étude de vos besoins, la décoration sur demande. Le ménage et le linge, eux, sont réglés par les voyageurs, via les plateformes.\n\nVous voulez le détail pour votre maison ? Posez-moi la question en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #conciergerie #proprietaire #locationsaisonniere",
+    "alt_text": "Carrousel de cinq images, logo CDM Conciergerie en haut de chaque image. Première image : une chambre blanche très lumineuse, une lampe et un lit ; libellé « Propriétaires · la formule » ; titre « Qu'est-ce qui est inclus ? » et mention « Faites défiler ». Deuxième image : des voilages éclairés par le soleil ; carte « Côté annonces ? » : Vos annonces sur Airbnb, Booking et Abritel, et les échanges avec vos voyageurs, dans leur langue, avant, pendant et après le séjour. Troisième image : trois clés anciennes posées sur du lin ; carte « Côté logement ? » : L'accueil et la remise des clés, le ménage contrôlé, les consommables et produits d'accueil, un contrôle après chaque départ. Quatrième image : un diffuseur et des bougies sur fond clair ; carte « Et le reste ? » : Les imprévus, à toute heure. Cinquième image : un plaid enroulé en spirale ; titre « Une formule, le même soin » et mention « Écrivez-moi en message privé ».",
+    "id": "p005",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Qu'est-ce qui est inclus ?"
+  },
+  {
+    "date": "2026-11-20",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/20.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/20.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/20-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/20-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/20-04.jpg"
+    ],
+    "legende": "Un jour de pluie dans la baie n'est pas un jour perdu.\n\nUn musée à Avranches, à 18 km de Pontorson à vol d'oiseau, les remparts de Saint-Malo sous un ciel gris, ou un après-midi au chaud avec un plaid et un jeu. Ici, le temps change vite, et l'éclaircie arrive souvent avant le soir.\n\nSi la pluie s'invite pendant un séjour avec Clés des Merveilles, demandez-moi des idées : j'en ai quelques-unes en réserve.\n\nUn séjour en vue, même sous la pluie ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #baiedumontsaintmichel #avranches #saintmalo",
+    "alt_text": "Carrousel de quatre images, logo CDM Conciergerie en haut de chaque image. Première image : une fenêtre sous la pluie, un arbre dehors ; libellé « Un jour de pluie » ; titre « Il pleut, on fait quoi ? » et mention « Faites défiler ». Deuxième image : les vagues contre la digue du Sillon à Saint-Malo, à l'heure bleue ; carte « Une balade quand même ? » : Les remparts de Saint-Malo sous un ciel gris ont leur charme. Prévoyez simplement un bon coupe-vent. Troisième image : un plateau de petit-déjeuner, cafés et viennoiseries, sur un lit blanc ; carte « Et au logement ? » : Un plaid, un jeu de société, une crêpe. Et un œil sur la météo : dans la baie, le ciel change vite. Quatrième image : un fauteuil bouclette sur un parquet sombre ; titre « La pluie aussi a ses plaisirs » et mention « Écrivez-moi en message privé ».",
+    "id": "p006",
+    "serie": "voyageurs",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Il pleut, on fait quoi ?"
+  },
+  {
+    "date": "2026-11-24",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/24.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/24.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/24-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/24-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/24-04.jpg"
+    ],
+    "legende": "Un voyageur d'hiver se souvient d'abord d'une chose : avoir eu chaud en arrivant.\n\nQuand les jours raccourcissent, quelques détails font la différence : une maison chauffée avant l'arrivée, des plaids, des lampes douces, une entrée où poser bottes et parapluies, et une notice claire pour le chauffage.\n\nChez Clés des Merveilles, le logement est contrôlé après chaque départ : c'est aussi l'occasion de vérifier ces détails.\n\nUne question sur le confort d'hiver de votre logement ? Je vous réponds en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #locationsaisonniere #hiver",
+    "alt_text": "Carrousel de quatre images, logo CDM Conciergerie en haut de chaque image. Première image : une fenêtre ouverte sur un paysage de brume ; libellé « Propriétaires · l'hiver » ; titre « Un logement chaud en hiver » et mention « Faites défiler ». Deuxième image : un canapé gris, des coussins et deux tables basses en bois ; carte « Une maison déjà chaude » : En hiver, la première impression se joue sur la température. Un logement déjà chauffé change tout pour un voyageur qui arrive tard, après la route. Troisième image : un intérieur chaleureux, bougies, plante et plaid tricoté ; carte « Plaids, lumière douce » : Un plaid sur le canapé, une couverture en plus dans le placard, des lampes plutôt qu'un plafonnier. L'hiver, on reste plus longtemps dedans. Quatrième image : une pile de lainages tenue à deux mains ; titre « L'hiver aussi, on accueille bien » et mention « Écrivez-moi en message privé ».",
+    "id": "p007",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Un logement chaud en hiver"
+  },
+  {
+    "date": "2026-11-27",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/27.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/27.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/27-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/27-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/27-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/27-05.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-11/27-06.jpg"
+    ],
+    "legende": "Les escapades à deux prennent tout leur sens hors saison.\n\nMoins de monde sur les sentiers, une lumière douce, le Mont au coucher du soleil depuis les herbus. Et pour une occasion, un anniversaire de rencontre ou une demande en mariage, le séjour romantique de Clés des Merveilles se prévoit à l'avance : petites attentions et surprise.\n\nDites-moi l'occasion et vos dates en message privé, je vous dis ce qui est possible.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #baiedumontsaintmichel #weekendadeux #normandie",
+    "alt_text": "Carrousel de six images, logo CDM Conciergerie en haut de chaque image. Première image : un sous-bois d'automne dans une lumière dorée ; titre « Une escapade à deux » et mention « Faites défiler ». Deuxième image : la baie à marée basse sous un ciel pastel ; carte « Quelle saison choisir ? » : L'automne et l'hiver, de préférence. Troisième image : le Mont-Saint-Michel et son reflet au coucher du soleil ; carte « Que faire à deux ? » : Le Mont depuis les herbus en fin de journée, une balade à Cancale face à la mer, puis une table réservée à Pontorson. Quatrième image : un bouquet de fleurs séchées ; carte « Et au logement ? » : Sur demande, je prépare un séjour romantique. Cinquième image : la silhouette du Mont-Saint-Michel au crépuscule, au-dessus des herbus ; texte « Le Mont au couchant, depuis les herbus. ». Sixième image : l'eau calme d'un marais à la tombée du jour ; titre « La baie, à deux » et mention « Écrivez-moi en message privé ».",
+    "id": "p008",
+    "serie": "voyageurs",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Une escapade à deux"
+  },
+  {
+    "date": "2026-12-01",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/01.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/01.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/01-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/01-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/01-04.jpg"
+    ],
+    "legende": "Non, et c'est voulu.\n\nLes plateformes versent directement le prix des séjours sur votre compte. De mon côté, je facture ma prestation chaque mois, une fois les séjours encaissés, sans frais fixe ni abonnement. Le ménage et le linge sont réglés par les voyageurs, via les plateformes.\n\nChacun son rôle, et des comptes lisibles : c'est ainsi que travaille Clés des Merveilles.\n\nUne question sur vos revenus ou sur ma facture ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #conciergerie #locationsaisonniere",
+    "alt_text": "Carrousel de quatre images, logo CDM Conciergerie en haut de chaque image. Première image : une fenêtre à petits carreaux ouverte sur la verdure ; libellé « Propriétaires · vos revenus » ; titre « Vous encaissez mes revenus ? » et mention « Faites défiler ». Deuxième image : un coussin de lin sur un lit, dans une lumière dorée ; carte « Qui reçoit le prix des séjours ? » : Vous. Airbnb, Booking ou Abritel vous versent directement le prix de chaque séjour, sur votre compte. Troisième image : un linge blanc en gros plan, lumière douce ; carte « Et la conciergerie, alors ? » : Je facture ma prestation chaque mois, une fois les séjours encaissés, sans frais fixe ni abonnement. Tout reste lisible : la plateforme d'un côté, ma facture de l'autre. Quatrième image : une clé et sa ficelle sur une table en bois ; titre « Vos revenus, sur votre compte » et mention « Écrivez-moi en message privé ».",
+    "id": "p009",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Vous encaissez mes revenus ?"
+  },
+  {
+    "date": "2026-12-04",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/04.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/04-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/04-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/04-04.jpg"
+    ],
+    "legende": "On traverse souvent Pontorson sans s'arrêter. C'est dommage.\n\nLa ville a son église romane, classée monument historique, un circuit dans les rues anciennes proposé par l'office de tourisme, et le Couesnon qui la traverse. De là, la voie verte suit la rivière jusqu'au Mont, à plat.\n\nC'est ici que je travaille, et c'est d'ici que Clés des Merveilles rayonne sur toute la baie. La Tour Saint-Michel, l'un de mes logements, est au bord du Couesnon et de la voie verte. Réservation via Airbnb, Booking ou Abritel.\n\nVous passez par Pontorson cet hiver ? Faites-moi signe en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #baiedumontsaintmichel #normandie #voieverte",
+    "alt_text": "Carrousel de quatre images, logo CDM Conciergerie en haut de chaque image. Première image : un vélo à contre-jour en gros plan, sur un ciel rose de fin de journée ; libellé « Autour de la baie » ; titre « Que faire à Pontorson ? » et mention « Faites défiler ». Deuxième image : le Couesnon au crépuscule, la silhouette du Mont-Saint-Michel au bout ; carte « Il y a quoi à voir ? » : Une église romane classée, un circuit dans les rues anciennes, et le Couesnon, qui traverse la ville puis rejoint le Mont. Troisième image : le Mont-Saint-Michel en noir et blanc ; carte « Et pour rejoindre le Mont ? » : La voie verte longe le Couesnon jusqu'au Mont : un chemin plat, en bitume, agréable à pied comme à vélo. Le Mont est à 9 km, à vol d'oiseau. Quatrième image : une lanterne blanche allumée, des pommes de pin et des baies rouges ; titre « Pontorson, la porte de la baie » et mention « Écrivez-moi en message privé ».",
+    "id": "p010",
+    "serie": "baie",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Que faire à Pontorson ?"
+  },
+  {
+    "date": "2026-12-08",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/08.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/08.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/08-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/08-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/08-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/08-05.jpg"
+    ],
+    "legende": "En décembre, beaucoup de voyageurs arrivent à la nuit tombée.\n\nPour que le séjour commence bien, quatre détails comptent : une adresse complète avec un repère, une photo de la façade envoyée avant l'arrivée, une lumière près de la porte, et une indication claire pour se garer.\n\nL'accueil et la remise des clés font partie de la formule de Clés des Merveilles : une arrivée bien préparée commence par là.\n\nVous voulez revoir l'arrivée chez vous ? Parlons-en : écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #locationsaisonniere #accueil",
+    "alt_text": "Carrousel de cinq images, logo CDM Conciergerie en haut de chaque image. Première image : une clé ancienne posée sur un sol de béton clair ; libellé « Propriétaires · l'arrivée » ; titre « Facile à trouver, même de nuit » et mention « Faites défiler ». Deuxième image : une maison de campagne dans la lumière du soir ; carte « Précise et complète » : Numéro, rue, étage, et un repère : un portail bleu, une boîte aux lettres. Troisième image : une longère de pierre couverte de lierre ; carte « Un éclairage dehors » : Une lumière extérieure ou un détecteur de présence près de la porte. Quatrième image : une maison de pierre aux volets bleus ; carte « Où se garer ? » : Indiquez où se garer, à quelle distance, et si c'est gratuit. Cinquième image : une clé ancienne ouvragée sur du bois patiné ; titre « Une arrivée sans détour » et mention « Écrivez-moi en message privé ».",
+    "id": "p011",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Facile à trouver, même de nuit"
+  },
+  {
+    "date": "2026-12-11",
+    "type": "image",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/11.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/11.jpg"
+    ],
+    "legende": "Un fauteuil près du sapin, un livre, et la pluie qui tape doucement sur la vitre.\n\nIl y a des séjours pour tout voir, et d'autres pour ne rien faire. Décembre dans la baie se prête aux seconds : des matins lents, un livre au chaud, le Mont au loin quand la brume se lève.\n\nEt si le ciel s'ouvre dans l'après-midi, vous qui séjournez avec Clés des Merveilles, demandez-moi une balade près de votre logement.\n\nUne envie de décembre au calme ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #baiedumontsaintmichel #normandie #slowtravel",
+    "alt_text": "Photo : un salon clair, un sapin décoré, des fauteuils et une cheminée blanche. Logo CDM Conciergerie en haut.",
+    "id": "p012",
+    "serie": "voyageurs",
+    "bonus": false,
+    "evenement": null,
+    "titre": ""
+  },
+  {
+    "date": "2026-12-15",
+    "type": "image",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/15.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/15.jpg"
+    ],
+    "legende": "Une lumière d'hiver, basse et douce, dans la maison.\n\nEn hiver, ce n'est pas la terrasse que les voyageurs regardent en premier dans une annonce : c'est la cheminée, le plaid, la lampe allumée. Si votre maison a ce caractère, montrez-le parmi les premières photos, et dites-le dans le titre.\n\nUne annonce qui change avec les saisons parle mieux aux voyageurs du moment. Les annonces font partie de ma formule, pour chaque logement de Clés des Merveilles.\n\nVous voulez retravailler votre annonce d'hiver ? Envoyez-moi un message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #locationsaisonniere #hiver",
+    "alt_text": "Photo : un fauteuil, un plaid vert et un bouquet sec dans une pièce blanche. Logo CDM Conciergerie en haut.",
+    "id": "p013",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": ""
+  },
+  {
+    "date": "2026-12-18",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/18.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/18.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/18-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/18-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/18-04.jpg"
+    ],
+    "legende": "En décembre, la baie retrouve son calme.\n\nUne lumière basse, les moutons dans les prés, et le soir, le village du Mont, en accès libre, presque pour vous seul. Depuis Pontorson, point de départ de Clés des Merveilles, le Mont est à 9 km à vol d'oiseau.\n\nLes vacances de Noël commencent ce samedi. Entre deux repas de fête, gardez une matinée pour la baie.\n\nVous cherchez un logement pour les fêtes ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #baiedumontsaintmichel #montsaintmichel #hiver",
+    "alt_text": "Carrousel de quatre images, logo CDM Conciergerie en haut de chaque image. Première image : des moutons dans un pré noyé de brume ; libellé « Décembre dans la baie » ; titre « Décembre, la baie au calme » et mention « Faites défiler ». Deuxième image : l'abbaye et les maisons du village du Mont-Saint-Michel au-dessus des remparts ; carte « L'hiver commence » : Le lundi 21 décembre, l'hiver commence. La lumière rasante colore la baie, et le Mont, plus calme qu'en été, se parcourt à votre rythme. Troisième image : le Mont-Saint-Michel au loin sous un ciel orangé ; carte « Le village, le soir » : Le village du Mont est en accès libre et gratuit. Une balade de fin de journée, quand tout se calme. Quatrième image : une grande fenêtre à petits carreaux de verre dépoli, dans la lumière d'hiver ; titre « L'hiver, en douceur » et mention « Écrivez-moi en message privé ».",
+    "id": "p014",
+    "serie": "saison",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Décembre, la baie au calme"
+  },
+  {
+    "date": "2026-12-22",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/22.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/22.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/22-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/22-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/22-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/22-05.jpg"
+    ],
+    "legende": "Un logement, plusieurs vitrines.\n\nAirbnb, Booking et Abritel ne touchent pas tout à fait les mêmes voyageurs. Être présent sur plusieurs plateformes élargit votre public, à condition de garder un calendrier synchronisé.\n\nLes annonces que je publie pour Clés des Merveilles vont sur les trois.\n\nVous hésitez entre une ou plusieurs plateformes ? Posez-moi vos questions en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #locationsaisonniere #conciergerie",
+    "alt_text": "Carrousel de cinq images, logo CDM Conciergerie en haut de chaque image. Première image : une fenêtre à petits carreaux et une lumière d'hiver ; libellé « Propriétaires · vos annonces » ; titre « Sur quelles plateformes ? » et mention « Faites défiler ». Deuxième image : des clés anciennes accrochées à une serrure, sur une porte claire ; carte « Où sera visible mon logement ? » : Sur les principales plateformes : Airbnb, Booking et Abritel. Troisième image : un canapé blanc contre un mur clair ; carte « Plusieurs plateformes, c'est risqué ? » : Pas avec un calendrier commun. Quatrième image : une table de Noël aux fleurs rouges ; carte « Et les commissions ? » : Chaque plateforme prend sa part, selon ses propres conditions. Cinquième image : le Mont-Saint-Michel au loin, un chenal dans les herbus verts ; titre « Plus de voyageurs, un seul calendrier » et mention « Écrivez-moi en message privé ».",
+    "id": "p015",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Sur quelles plateformes ?"
+  },
+  {
+    "date": "2026-12-25",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/25.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/25.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/25-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/25-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/25-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/25-05.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/25-06.jpg"
+    ],
+    "legende": "Joyeux Noël à vous tous.\n\nAux voyageurs qui passent les fêtes dans la baie : j'espère que la journée vous a offert une balade dans le froid, et je vous souhaite une belle tablée ce soir. Aux propriétaires qui ouvrent leur maison avec Clés des Merveilles : merci.\n\nLes imprévus, même aujourd'hui, sont pris en charge à toute heure : c'est dans ma formule.\n\nUn imprévu aujourd'hui, ou l'envie de revenir ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #noel #baiedumontsaintmichel #normandie",
+    "alt_text": "Carrousel de six images, logo CDM Conciergerie en haut de chaque image. Première image : une assiette, un brin de sapin et des couverts dorés ; libellé « 25 décembre » ; titre « Joyeux Noël dans la baie » et mention « Faites défiler ». Deuxième image : le Mont-Saint-Michel dans la brume, en noir et blanc ; texte « Une balade dans le froid, le Mont au loin. ». Troisième image : une table de Noël aux fleurs rouges et bougies ; texte « Une grande tablée, des bougies, le temps de se retrouver. ». Quatrième image : des boules et un flocon argenté dans un sapin illuminé ; texte « Une soirée au chaud, et rien d'autre à prévoir. ». Cinquième image : une fenêtre décorée de guirlandes lumineuses ; carte « À vous tous » : Joyeux Noël aux voyageurs qui passent les fêtes dans la baie, et aux propriétaires qui leur ouvrent leur maison. Sixième image : une assiette de fête et des lumières floues ; titre « Belles fêtes, et à bientôt » et mention « Écrivez-moi en message privé ».",
+    "id": "p016",
+    "serie": "evenement",
+    "bonus": true,
+    "evenement": "Noël",
+    "titre": "Joyeux Noël dans la baie"
+  },
+  {
+    "date": "2026-12-26",
+    "type": "image",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/26.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/26.jpg"
+    ],
+    "legende": "Un matin de brume sur les prés-salés : le Mont apparaît, puis disparaît.\n\nC'est l'heure que je conseille, avec le coucher du soleil depuis les herbus. La baie est silencieuse, et la lumière ne cesse de changer.\n\nLoger à Pontorson, à 9 km du Mont à vol d'oiseau, permet d'y être dès le lever du jour. C'est là que Clés des Merveilles est installée.\n\nVous êtes dans la baie pour les fêtes ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #montsaintmichel #baiedumontsaintmichel #hiver",
+    "alt_text": "Photo : le Mont-Saint-Michel dans la brume, un chenal serpente dans les herbus. Logo CDM Conciergerie en haut.",
+    "id": "p017",
+    "serie": "baie",
+    "bonus": false,
+    "evenement": null,
+    "titre": ""
+  },
+  {
+    "date": "2026-12-29",
+    "type": "image",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/29.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2026-12/29.jpg"
+    ],
+    "legende": "Du premier appel aux premiers voyageurs, vous avez une seule interlocutrice : moi.\n\nJe connais votre logement, votre calendrier et vos voyageurs. Chez Clés des Merveilles, pas de standard, pas de relais d'une personne à l'autre.\n\nLes étapes sont simples : un appel, une visite à Pontorson ou dans la baie, un tarif clair et sans engagement, puis les premiers voyageurs.\n\nEnvie d'en parler de vive voix ? Commençons par un message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #conciergerie #locationsaisonniere",
+    "alt_text": "Photo : une poignée de porte en laiton sur une porte en bois. Logo CDM Conciergerie en haut. Libellé « Propriétaires ». Titre : « Une seule interlocutrice ».",
+    "id": "p018",
+    "serie": "proprietaires",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Une seule interlocutrice"
+  },
+  {
+    "date": "2027-01-01",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/01.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/01.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/01-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/01-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/01-04.jpg"
+    ],
+    "legende": "Belle année 2027 à vous tous.\n\nJe vous souhaite des ciels qui changent sur la baie, la mer qui monte au pied du Mont, et des balades à vélo le long du Couesnon, avec des vélos livrés au logement si vous le souhaitez. Et aux propriétaires, une année de beaux séjours.\n\nMerci aux propriétaires qui ont fait confiance à Clés des Merveilles en 2026, et aux voyageurs venus découvrir la baie.\n\nÉcrivez-moi en message privé, je vous réponds avec plaisir.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #bonneannee #baiedumontsaintmichel #normandie",
+    "alt_text": "Carrousel de quatre images, logo CDM Conciergerie en haut de chaque image. Première image : la grève de Saint-Benoît-des-Ondes à marée basse, sous un ciel bleu ; libellé « 1er janvier » ; titre « Belle année dans la baie » et mention « Faites défiler ». Deuxième image : le Mont-Saint-Michel au lever du jour, reflété dans l'eau ; texte « Des matins clairs, le Mont dans l'eau calme. ». Troisième image : un bouquet de roses roses et de bleuets ; carte « Pour votre confiance » : Merci aux propriétaires qui m'ont ouvert leur porte et aux voyageurs venus dormir dans la baie. Je vous souhaite une très belle année 2027. Quatrième image : le Mont-Saint-Michel au couchant rose ; titre « Bonne année, à très vite » et mention « Écrivez-moi en message privé ».",
+    "id": "p019",
+    "serie": "evenement",
+    "bonus": true,
+    "evenement": "Jour de l'an",
+    "titre": "Belle année dans la baie"
+  },
+  {
+    "date": "2027-01-02",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/02.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/02-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/02-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/02-04.jpg"
+    ],
+    "legende": "C'est un débat qui ne finit jamais.\n\nLe Mont-Saint-Michel est en Normandie, de peu. C'est le Couesnon qui trace la frontière avec la Bretagne, et un vieux dicton qui raconte la suite : « Le Couesnon, dans sa folie, a mis le Mont en Normandie. »\n\nPontorson est normande aussi, avec la Bretagne de l'autre côté de la rivière. Cancale et Saint-Malo, côté breton, sont à 29 et 40 km de la ville à vol d'oiseau : les voyageurs de Clés des Merveilles peuvent passer d'une région à l'autre dans la journée.\n\nNormand ou breton ? Dites-moi votre camp en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #montsaintmichel #normandie #bretagne",
+    "alt_text": "Carrousel de quatre images, logo CDM Conciergerie en haut de chaque image. Première image : un vol de goélands au-dessus de la mer ; libellé « Autour de la baie » ; titre « Le Mont, normand ou breton ? » et mention « Faites défiler ». Deuxième image : le Mont-Saint-Michel au-dessus des prés-salés ; carte « Alors ? » : Normand. Le Couesnon marque la frontière entre la Normandie et la Bretagne, et le Mont se trouve du côté normand. Troisième image : le Mont-Saint-Michel sous de grands nuages blancs ; carte « Et le dicton ? » : « Le Couesnon, dans sa folie, a mis le Mont en Normandie. » Un dicton que l'on se répète encore, des deux côtés de la rivière. Quatrième image : la silhouette du Mont-Saint-Michel sous un ciel violet ; titre « Un fleuve, deux régions » et mention « Écrivez-moi en message privé ».",
+    "id": "p020",
+    "serie": "baie",
+    "bonus": false,
+    "evenement": null,
+    "titre": "Le Mont, normand ou breton ?"
+  },
+  {
+    "date": "2027-01-05",
+    "type": "carrousel",
+    "image_url": "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/05.jpg",
+    "images": [
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/05.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/05-02.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/05-03.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/05-04.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/05-05.jpg",
+      "https://raw.githubusercontent.com/tomhodet/cdm-insta/main/calendrier/2027-01/05-06.jpg"
+    ],
+    "legende": "Une nouvelle année commence, et un logement dans la baie a son propre calendrier.\n\nJanvier pour les petits travaux. Février et ses vacances d'hiver. Le printemps et les ponts de mai. La pleine saison dès le 3 juillet. Puis l'arrière-saison, plus calme, jusqu'aux vacances d'automne.\n\nVos dates personnelles, elles, se bloquent tôt : comme pour chaque logement de Clés des Merveilles, vous les bloquez quand vous voulez venir.\n\nVous voulez caler votre année ? Écrivez-moi en message privé.\n\nÀ Pontorson, et tout autour de la baie.",
+    "premier_commentaire": "#clesdesmerveilles #pontorson #proprietaire #locationsaisonniere #calendrier",
+    "alt_text": "Carrousel de six images, logo CDM Conciergerie en haut de chaque image. Première image : une armoire à linge remplie de serviettes pliées ; titre « L'année d'un logement dans la baie » et mention « Faites défiler ». Deuxième image : des textiles de coton roulés en gros plan ; carte « Préparer, accueillir » : petits travaux, puis vacances d'hiver du 6 février au 8 mars selon les zones. Troisième image : une branche de fleurs roses ; carte « Printemps et ponts » : vacances du 3 avril au 3 mai, Ascension le 6 mai, Pentecôte le 16 mai. Quatrième image : le Mont-Saint-Michel au-dessus des champs verts ; carte « La pleine saison » : dès le samedi 3 juillet, dates personnelles bloquées tôt. Cinquième image : des feuilles d'automne ; carte « L'arrière-saison » : couples et randonneurs reviennent ; vacances d'automne du 23 octobre au 8 novembre. Sixième image : le Mont dans la brume, vu du ciel ; titre « Une année, bien rythmée » et mention « Écrivez-moi en message privé ».",
+    "id": "p021",
+    "serie": "saison",
+    "bonus": false,
+    "evenement": null,
+    "titre": "L'année d'un logement dans la baie"
+  }
+]
